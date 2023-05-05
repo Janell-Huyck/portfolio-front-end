@@ -1,5 +1,4 @@
 import React from 'react';
-import Resume from '../components/resume.component';
 import './resume.page.css'; // Import the CSS file for the page
 
 const ResumePage = () => {
@@ -16,7 +15,14 @@ const ResumePage = () => {
         />
       </div>
       <div className="resume-container mobile-only">
-        <Resume />
+      <iframe 
+          title="My Resume"
+          src="https://docs.google.com/document/d/e/2PACX-1vRhjrqNJHIMAqTHcKOiwpskLUlivyo9tXPQTG_Ea6nqY5kQzU1jec20Lp8yyfK2kQyrflUT0s1Wvpm2/pub?embedded=true"
+          width="100%"
+          height="1800"
+          frameBorder="0"
+          scrolling="yes" 
+          ></iframe>
       </div>
     </div>
   );

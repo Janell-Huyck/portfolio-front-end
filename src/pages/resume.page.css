@@ -6,11 +6,19 @@
     .full-width {
       display: block;
     }
+
+    .full-width iframe {
+      height: 100vh; /* Set the height of the iframe to 100% of the viewport height */
+    }
   }
   
   @media screen and (max-width: 767px) {
     .mobile-only {
       display: block;
+    }
+
+    .mobile-only iframe {
+      height: 100vh; /* Set the height of the iframe to 100% of the viewport height */
     }
   }
   
