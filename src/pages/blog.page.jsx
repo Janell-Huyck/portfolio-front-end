@@ -1,12 +1,21 @@
-import React from "react";
+import React from 'react';
+import './blog.page.css'; // Import the CSS file for the page
 
-const Blog = () => {
-    return (
-        <div>
-        <h1>Blog</h1>
-        <p>Here's a link to my blog: <a href="https://example.com/blog">Read</a></p>
-        </div>
+const BlogPage = () => {
+  return (
+    <div>
+      <div className="blog-container">
+        <iframe 
+          title="My Blog"
+          src="https://www.uncutruby.com"
+          width="100%"
+          height="800"
+          frameBorder="0"
+          scrolling="yes"
+        />
+      </div>
+      </div>
     );
-}
+};
 
-export default Blog;
+export default BlogPage;
