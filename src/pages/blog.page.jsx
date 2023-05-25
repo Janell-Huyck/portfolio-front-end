@@ -1,5 +1,5 @@
 import React from 'react';
-import './blog.page.css'; // Import the CSS file for the page
+import './blog.page.scss'; // Import the SCSS file for the page
 
 const BlogPage = () => {
   return (

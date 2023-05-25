@@ -1,5 +1,5 @@
 import React from 'react';
-import './resume.page.css'; // Import the CSS file for the page
+import './resume.page.scss'; // Import the SCSS file for the page
 
 const ResumePage = () => {
   return (
