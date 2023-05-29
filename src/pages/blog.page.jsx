@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTag } from '@fortawesome/free-solid-svg-icons';
 import './blog.page.scss'; // Import the SCSS file for the page
+import CreatePost from '../components/createPost.component';
 
 
 
@@ -55,6 +56,8 @@ const BlogPage = () => {
           )
         })}
         </div>
+        <hr />
+        <CreatePost />
       </div>
   );
 };
