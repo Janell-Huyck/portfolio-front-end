@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
+
 function Home() {
   return (
     <div className="home-page-container">
+
       <h1>Hi, I'm Janell!</h1>
       <div className='home-page-content'>
         <div className="home-page-upper-content">
