@@ -1,26 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTag } from '@fortawesome/free-solid-svg-icons';
 import './blog.page.scss'; // Import the SCSS file for the page
 import CreatePost from '../components/createPost.component';
+import BlogPagination from '../components/blogPagination.component';
 
-
+const POSTS_PER_PAGE = 5;
 
 const BlogPage = () => {
   const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0); // react-paginate uses zero indexed pages
+
+  const fetchPosts = useCallback(() => {
+    fetch('http://localhost:8000/posts/')
+        .then(response => response.json())
+        .then(data => setPosts(data));
+  }, []);
 
   useEffect(() => {
-      fetch('http://localhost:8000/posts/')
-          .then(response => response.json())
-          .then(data => setPosts(data));
-  }, []);
+    fetchPosts();
+  }, [fetchPosts]);
+
+  const handlePageClick = (data) => {
+    setCurrentPage(data.selected);
+  };
+
+  const offset = currentPage * POSTS_PER_PAGE;
+  const pageCount = Math.ceil(posts.length / POSTS_PER_PAGE);
+  const currentPosts = posts.slice().reverse().slice(offset, offset + POSTS_PER_PAGE);
+
 
   return (
       <div className="blog-container">
         <h1>Blog</h1>
         <div className="blog-posts">
         {posts.length === 0 && <p>There are no posts yet!</p>}
-        {posts.map(post => {
+        {currentPosts.map(post => {
           const dateObject = new Date(post.date);
           const postDate = `${dateObject.toLocaleString('default', { month: 'long' })} ${dateObject.getDate()}, ${dateObject.getFullYear()}`;
           return (
@@ -28,7 +43,7 @@ const BlogPage = () => {
             <h2>{post.title}</h2>
             
             <div className='blog-post-meta'>
-              <p className='post-author'>By {post.author.name}</p>
+              <p className='post-author'>By {post.author.full_name}</p>
               <p className='post-date'>{postDate}</p>
             </div>
 
@@ -56,8 +71,12 @@ const BlogPage = () => {
           )
         })}
         </div>
+        <BlogPagination
+          pageCount={pageCount}
+          onPageChange={handlePageClick}
+        />
         <hr />
-        <CreatePost />
+        <CreatePost onPostCreate={fetchPosts} />
       </div>
   );
 };
