@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import './navigation.styles.scss';
@@ -6,20 +6,30 @@ import './navigation.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faBars, faHouse, faFile, faBlog, faLaptopCode, faWindowClose } from '@fortawesome/free-solid-svg-icons'
 
-
-
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const sidebarRef = useRef(); // Create a reference
 
   const toggleMenu = () => {
-    console.log("toggleMenu")
     setShowMenu(!showMenu);
   };
 
   const closeMenu = () => {
-    console.log("closeMenu")
     setShowMenu(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        closeMenu();
+      }
+    };
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []); // add empty array as second argument to run only on component mount and unmount
 
   return (
     <header className="">
@@ -41,6 +51,7 @@ const Navigation = () => {
         </button>
 
         <div
+          ref={sidebarRef} // add the reference here
           id="sidebarMenu"
           className={`show-on-desktop collapse sidebar py-0 ${showMenu? "show" :"hide"}`}
           >
