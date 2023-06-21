@@ -9,6 +9,8 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    background-size : cover;
+    background-color: var(--primary-color);
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -19,7 +21,8 @@
 }
 
 .main {
-    background-color: var(--primary-color);
+    
+  background-color: var(--primary-color);
 }
 
 .page {
