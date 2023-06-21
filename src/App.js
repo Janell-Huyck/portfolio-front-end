@@ -10,7 +10,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <main>
+    <main class="main">
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />

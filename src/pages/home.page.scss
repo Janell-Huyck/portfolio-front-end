@@ -8,7 +8,6 @@
 }
     
 .home-page-content {
-    background-color: green;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +17,6 @@
 }
     
 .home-page-upper-content {
-    background-color: lightblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +26,6 @@
 }
     
 .home-page-lower-content {
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,8 +33,21 @@
     margin-bottom: 2rem;
     width: 100%;
     padding: 1rem;
-    box-sizing: border-box;
     text-align: justify;
+}
+
+.home-page-link-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.home-page-link-icons a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    margin: 0 1rem;
 }
     
 .headshot {

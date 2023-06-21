@@ -3,7 +3,7 @@ import './resume.page.scss'; // Import the SCSS file for the page
 
 const ResumePage = () => {
   return (
-    <div>
+    <div className='page'>
       <div className="resume-container full-width">
         <iframe 
           title="My Resume"

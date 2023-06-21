@@ -31,7 +31,7 @@ const BlogPage = () => {
 
 
   return (
-      <div className="blog-container">
+      <div className="blog-container page">
         <h1>Blog</h1>
         <div className="blog-posts">
         {posts.length === 0 && <p>There are no posts yet!</p>}

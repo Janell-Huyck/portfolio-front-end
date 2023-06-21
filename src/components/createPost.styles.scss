@@ -6,17 +6,12 @@
     position: relative;
 }
 
-.silly {
-    background-color: yellow;
-}
-
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .modal-overlay-dark {
@@ -25,7 +20,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0, 0.75);
 }
 
 .modal-content {
@@ -42,35 +36,3 @@
     padding: 20px;
   }
 
-// .Overlay {
-//     position: fixed;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     // background: rgba(0, 0, 0, 0.5);
-//     // background: rgb(179, 60, 179) !important;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     z-index: 1000;
-// }
-    
-// .Overlay--dark {
-//     // background: rgba(0, 0, 0, 0.7);
-//     background: red !important;
-//     z-index: 1001
-// }
-
-
-// .ReactModal__Content {
-//     position: relative;
-//     background-color: white;
-//     border-radius: 4px;
-//     outline: none;
-//     width: 80%;
-//     max-width: 500px;
-//     padding: 20px;
-//     box-sizing: border-box;
-//     transition: all 0.3s ease-in-out;
-// }

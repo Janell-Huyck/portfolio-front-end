@@ -1,13 +1,14 @@
 import React from 'react';
 import './home.page.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 
 
 
 function Home() {
   return (
-    <div className="home-page-container">
+    <div className="home-page-container page">
 
       <h1>Hi, I'm Janell!</h1>
       <div className='home-page-content'>
@@ -24,9 +25,7 @@ function Home() {
           <div>
             <h3>Based in Cincinnati, OH</h3>
           </div>
-          <a href="https://www.linkedin.com/in/janell-huyck/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
-          </a>
+       
 
           <img className="headshot" src={require("../assets/images/ai-headshot2.jpeg")} alt="Janell" />
         </div>
@@ -39,6 +38,14 @@ function Home() {
           massage therapy to programming - I'm always ready to learn new things. For example, I used Chat GPT to help me 
           craft this perfect "about" section!
           </p>
+        </div>
+        <div className="home-page-link-icons">
+          <a href="https://www.linkedin.com/in/janell-huyck/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
+          </a>
+          <a href="https://github.com/Janell-Huyck/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} size="xl" />
+          </a>
         </div>
       </div>
     </div>

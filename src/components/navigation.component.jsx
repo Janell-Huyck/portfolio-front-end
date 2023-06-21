@@ -79,13 +79,13 @@ const Navigation = () => {
                 >
                 <FontAwesomeIcon icon={faLaptopCode} /><span>Projects</span></Link
                 >
-              <Link
+              {/* <Link
                 to="/blog"
                 className="list-group-item list-group-item-action py-2 ripple"
                   onClick={closeMenu}
                 >
                 <FontAwesomeIcon icon={faBlog} /><span>Blog</span></Link
-                >
+                > */}
               <Link
                 to="/contact"
                 className="list-group-item list-group-item-action py-2 ripple"

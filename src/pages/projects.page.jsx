@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
     return (
-        <div>
+        <div className="page">
         <h1>Projects</h1>
         <h2 className="bg-warning fst-italic">Warning: these projects are still in the beginning stages 
         and not yet ready to be evaluated.  I have them listed here so that I have something 

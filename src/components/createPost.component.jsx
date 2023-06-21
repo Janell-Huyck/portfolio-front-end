@@ -63,7 +63,6 @@ const CreatePost = ({ onPostCreate }) => {
             padding: '20px',
             width: '80%',
             maxWidth: '500px',
-            boxSizing: 'border-box',
             zIndex: 10,
         }
     }
