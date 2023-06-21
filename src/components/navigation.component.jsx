@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './navigation.styles.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faBars, faHouse, faFile, faBlog, faLaptopCode, faWindowClose } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBars, faHouse, faFile, faLaptopCode, faWindowClose } from '@fortawesome/free-solid-svg-icons'
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
