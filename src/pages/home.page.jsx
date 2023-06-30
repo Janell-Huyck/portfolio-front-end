@@ -9,8 +9,10 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 function Home() {
   return (
     <div className="home-page-container page">
-
       <h1>Hi, I'm Janell!</h1>
+      <div>
+            <p className="font-italic">based in Cincinnati, OH</p>
+      </div>
       <div className='home-page-content'>
         <div className="home-page-upper-content">
           <div>
@@ -22,9 +24,7 @@ function Home() {
               <li>React</li>
             </ul>
           </div>
-          <div>
-            <h3>Based in Cincinnati, OH</h3>
-          </div>
+
        
 
           <img className="headshot" src={require("../assets/images/ai-headshot2.jpeg")} alt="Janell" />
