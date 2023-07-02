@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import Modal from 'react-modal';
-import Spinner from '../assets/spinner.gif';
+import Spinner from '../../assets/spinner.gif';
 import './createPost.styles.scss';
 
 Modal.setAppElement('#root') // makes the background hidden for screen readers

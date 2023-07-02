@@ -2,8 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTag } from '@fortawesome/free-solid-svg-icons';
 import './blog.page.scss'; // Import the SCSS file for the page
-import CreatePost from '../components/createPost.component';
-import BlogPagination from '../components/blogPagination.component';
+import CreatePost from '../../components/createPost/createPost.component';
+import BlogPagination from '../../components/blogPagination/blogPagination.component';
 
 const POSTS_PER_PAGE = 5;
 

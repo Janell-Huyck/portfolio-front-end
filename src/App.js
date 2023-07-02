@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import ResumePage from './pages/resume.page';
-import Projects from './pages/projects.page';
-import Blog from './pages/blog.page';
+import ResumePage from './pages/resume/resume.page';
+import Projects from './pages/projects/projects.page';
+import Blog from './pages/blog/blog.page';
 import Home from './pages/home/home.page';
-import Contact from './pages/contact.page';
-import Navigation from './components/navigation.component';
+import Contact from './pages/contact/contact.page';
+import Navigation from './components/navigation/navigation.component';
 import { ViewportProvider } from './contexts/viewportProvider';
 
 import './App.css';
