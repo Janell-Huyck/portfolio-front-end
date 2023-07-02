@@ -5,12 +5,12 @@ import './projectCard.styles.scss';
 const ProjectCard = ({ project }) => {
     const { title, description, liveLink, gitHubLink, image, imageAlt } = project;
     return (
-        <div className="project-card card text-center h-100">
+        <div className="project-card card text-center h-100 d-flex flex-column">
             <img className="card-img-top" src={image} alt={imageAlt} />
-            <div className="card-footer h-100 align-items-end">
+            <div className="card-footer d-flex flex-column h-100 flex-grow-1">
                 <h2>{title}</h2>
-                <p className="flex-grow-1 flex-shrink-1">{description}</p>
-                <div className="see-links ">
+                <p className="">{description}</p>
+                <div className="see-links">
                     <a href={liveLink} target="_blank" rel="noopener noreferrer"><Button>See Live</Button></a>
                     <a href={gitHubLink} target="_blank" rel="noopener noreferrer"><Button>See Code</Button></a>
                 </div>
