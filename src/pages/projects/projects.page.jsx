@@ -9,7 +9,7 @@ const Projects = () => {
             title: "Blog-Generator",
             description: "A Python project specifically for assiting in generating ChatGPT-generated blog posts.",
             liveLink: "https://blog-generator-6qjr9.ondigitalocean.app/",
-            image: "https://via.placeholder.com/300x200",
+            imageURL: "/images/projects/blog-generator.png",
             imageAlt: "Blog Generator",
             gitHubLink: "https://github.com/Janell-Huyck/blog-generator"
         },
@@ -17,7 +17,7 @@ const Projects = () => {
             title: "Clothing-Ecommerce-Demo",
             description: "A React project demonstrating a sample ecommerce application.",
             liveLink: "https://janell-huyck-clothing-ecommerce-demo.netlify.app/",
-            image: "https://via.placeholder.com/300x200",
+            imageURL: "/images/projects/clothing-ecommerce.png",
             imageAlt: "Clothing Ecommerce Demo",
             gitHubLink: "https://github.com/Janell-Huyck/clothing-ecommerce"
         },
@@ -25,7 +25,7 @@ const Projects = () => {
             title: "2048-Game",
             description: "A React project demonstrating a clone of the game 2048.",
             liveLink: "https://janell-huyck.github.io/2048-game/",
-            image: "https://via.placeholder.com/300x200",
+            imageURL: "/images/projects/2048.png",
             imageAlt: "2048 game",
             gitHubLink: "https://github.com/Janell-Huyck/2048-game"
         }

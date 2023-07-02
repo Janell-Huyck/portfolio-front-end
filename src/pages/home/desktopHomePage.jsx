@@ -19,8 +19,8 @@ const DesktopHomePage = () => {
               <li>JavaScript</li>
               <li>React</li>
             </ul>
-          </div>
-          <img className="headshot" src={require("../../assets/images/ai-headshot2.jpeg")} alt="Janell" />
+          </div>src={require("../../assets/images/ai-headshot2.jpeg")}
+          <img className="headshot"  alt="Janell" />
         </div>
         <div className="home-page-lower-content">
           <p>
