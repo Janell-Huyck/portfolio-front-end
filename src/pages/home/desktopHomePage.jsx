@@ -18,12 +18,8 @@ const DesktopHomePage = () => {
               <li>Python</li>
               <li>JavaScript</li>
               <li>React</li>
-              This is the desktop page
             </ul>
           </div>
-
-       
-
           <img className="headshot" src={require("../../assets/images/ai-headshot2.jpeg")} alt="Janell" />
         </div>
         <div className="home-page-lower-content">

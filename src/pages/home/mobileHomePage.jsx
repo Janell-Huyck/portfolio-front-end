@@ -18,7 +18,6 @@ const MobileHomePage = () => {
               <li>Python</li>
               <li>JavaScript</li>
               <li>React</li>
-              This is the mobile page
             </ul>
           </div>
           <img className="headshot" src={require("../../assets/images/ai-headshot2.jpeg")} alt="Janell" />
