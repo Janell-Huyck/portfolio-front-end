@@ -1,17 +1,13 @@
 import React from 'react';
-import './home.page.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-
-
-
-function Home() {
+const DesktopHomePage = () => {
   return (
     <div className="home-page-container page">
       <h1>Hi, I'm Janell!</h1>
       <div>
-            <p className="font-italic">based in Cincinnati, OH</p>
+            <p className="fst-italic">based in Cincinnati, OH</p>
       </div>
       <div className='home-page-content'>
         <div className="home-page-upper-content">
@@ -22,12 +18,13 @@ function Home() {
               <li>Python</li>
               <li>JavaScript</li>
               <li>React</li>
+              This is the desktop page
             </ul>
           </div>
 
        
 
-          <img className="headshot" src={require("../assets/images/ai-headshot2.jpeg")} alt="Janell" />
+          <img className="headshot" src={require("../../assets/images/ai-headshot2.jpeg")} alt="Janell" />
         </div>
         <div className="home-page-lower-content">
           <p>
@@ -52,4 +49,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default DesktopHomePage;
