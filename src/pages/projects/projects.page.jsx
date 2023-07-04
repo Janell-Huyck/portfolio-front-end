@@ -5,14 +5,14 @@ import './projects.styles.scss'
 const Projects = () => {
 
     const projects = [
-        {
-            title: "Blog-Generator",
-            description: "A Python project specifically for assiting in generating ChatGPT-generated blog posts.",
-            liveLink: "https://blog-generator-6qjr9.ondigitalocean.app/",
-            imageURL: "/images/projects/blog-generator.png",
-            imageAlt: "Blog Generator",
-            gitHubLink: "https://github.com/Janell-Huyck/blog-generator"
-        },
+        // {
+        //     title: "Blog-Generator",
+        //     description: "A Python project specifically for assiting in generating ChatGPT-generated blog posts.",
+        //     liveLink: "https://blog-generator-6qjr9.ondigitalocean.app/",
+        //     imageURL: "/images/projects/blog-generator.png",
+        //     imageAlt: "Blog Generator",
+        //     gitHubLink: "https://github.com/Janell-Huyck/blog-generator"
+        // },
         {
             title: "Clothing-Ecommerce-Demo",
             description: "A React project demonstrating a sample ecommerce application.",
@@ -35,7 +35,7 @@ const Projects = () => {
     return (
         <div className="projects-page">
             <h1>Projects</h1>
-            <p>Page still under construction - last updated Jul 2, 2023</p>
+            <p>Page still under construction - last updated Jul 4, 2023</p>
             <div className="projects-list container-fluid content-row">
                 <div className="row">
                     <div className="d-flex flex-wrap">

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './navigation.styles.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faBars, faHouse, faFile, faLaptopCode, faWindowClose } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faHouse, faFile, faLaptopCode, faWindowClose } from '@fortawesome/free-solid-svg-icons'
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -90,20 +90,6 @@ const Navigation = () => {
                 >
                 <FontAwesomeIcon icon={faLaptopCode} /><span>Projects</span></Link
                 >
-              {/* <Link
-                to="/blog"
-                className="list-group-item list-group-item-action py-2 ripple"
-                  onClick={closeMenu}
-                >
-                <FontAwesomeIcon icon={faBlog} /><span>Blog</span></Link
-                > */}
-              <Link
-                to="/contact"
-                className="list-group-item list-group-item-action py-2 ripple"
-                onClick={closeMenu}
-                >
-                <FontAwesomeIcon icon={faEnvelope} /><span>Contact</span>
-              </Link>
             </span>
           </span>
         </div>
