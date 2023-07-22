@@ -1,7 +1,42 @@
 .see-links {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: space-between;
+    flex-shrink: 1;
+}
+
+.card-img-top {
+    object-fit: scale-up;
+    min-height: 60%;
+    max-height: 60%;
     width: 100%;
-    margin-top: auto;
-    padding: 0 1rem;
+}
+
+.card-footer {
+    min-height: 30%;
+    max-height: 30%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card {
+    font-size: 0.6vw;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    min-height: 10%;
+    max-height: 10%;
+}
+
+.project-button {
+    font-size: 0.8vw !important;
+    width: 100%;
+    margin-bottom: 0.1rem;
+}
+
+.project-description {
+    font-size: 1rem;
+
 }

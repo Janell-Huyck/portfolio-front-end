@@ -28,19 +28,26 @@ const Projects = () => {
             imageURL: "/images/projects/2048.png",
             imageAlt: "2048 game",
             gitHubLink: "https://github.com/Janell-Huyck/2048-game"
-        }
+        },
+        {
+            title: "Blog",
+            description: "A Ruby on Rails project demonstrating a blog application.",
+            liveLink: "https://uncutruby.com",
+            imageURL: "/images/projects/under-construction.png",
+            imageAlt: "Under Construction",
+            gitHubLink: "https://github.com/Janell-Huyck/uncut-ruby"
+        },
     ]
 
 
     return (
         <div className="projects-page">
             <h1>Projects</h1>
-            <p>Page still under construction - last updated Jul 4, 2023</p>
             <div className="projects-list container-fluid content-row">
                 <div className="row">
                     <div className="d-flex flex-wrap">
                         {projects.map((project, index) => (
-                            <div className="col-sm-6 col-lg-4 min-500" key={index}>
+                            <div className="col-sm-6 col-lg-4 h-500 m-2" key={index}>
                                 <ProjectCard project={project} />
                             </div>
                         ))}
