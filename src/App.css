@@ -4,13 +4,8 @@
     --tertiary-color: #ff7d5f;
 
     box-sizing: border-box;
-    position: relative;
-    min-height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
     margin: 0;
     padding: 0;
-    background-size : cover;
-    background-color: var(--primary-color);
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -20,16 +15,6 @@
 
 }
 
-.main {
-    
+html body {
   background-color: var(--primary-color);
-}
-
-.page {
-    min-height: calc(var(--vh, 1vh) * 100);
-    width: 100%;
-    margin: 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
 }

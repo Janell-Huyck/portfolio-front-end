@@ -32,7 +32,7 @@ const Navigation = () => {
   }, []); // add empty array as second argument to run only on component mount and unmount
 
   return (
-    <header className="navigation-container">
+    <nav className="navigation-container">
       <div
          className=""
          >
@@ -94,7 +94,7 @@ const Navigation = () => {
           </span>
         </div>
       </div>
-    </header>
+    </nav>
    )
 };
 
