@@ -10,11 +10,19 @@ const ViewportProvider = ({ children }) => {
   const handleWindowResize = () => {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
+    // Set vh unit
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 
   React.useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
+  }, [width, height]);
+
+  // Call handleWindowResize function to set vh unit on initial page load
+  React.useEffect(() => {
+    handleWindowResize();
   }, []);
 
   /* Now we are dealing with a context instead of a Hook, so instead

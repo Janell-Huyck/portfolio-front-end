@@ -8,14 +8,14 @@
 
 .card-img-top {
     object-fit: scale-up;
-    min-height: 60%;
-    max-height: 60%;
+    min-height: calc(var(--vh, 1vh) * 60);
+    max-height: calc(var(--vh, 1vh) * 60);
     width: 100%;
 }
 
 .card-footer {
-    min-height: 30%;
-    max-height: 30%;
+    min-height: calc(var(--vh, 1vh) * 30);
+    max-height: calc(var(--vh, 1vh) * 30);
     align-items: center;
     justify-content: space-between;
 }
@@ -26,8 +26,8 @@
 
 .project-title {
     font-size: 1.5rem;
-    min-height: 10%;
-    max-height: 10%;
+    min-height: calc(var(--vh, 1vh) * 10);
+    max-height: calc(var(--vh, 1vh) * 10);
 }
 
 .project-button {

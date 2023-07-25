@@ -32,12 +32,12 @@ const Navigation = () => {
   }, []); // add empty array as second argument to run only on component mount and unmount
 
   return (
-    <header className="">
-      <span
+    <header className="navigation-container">
+      <div
          className=""
          >
         <button
-          className={` hide-on-desktop ${showMenu? "" :""}`}
+          className={`navigation-button hide-on-desktop ${showMenu? "" :""}`}
           type="button"
 
           aria-controls="sidebarMenu"
@@ -93,7 +93,7 @@ const Navigation = () => {
             </span>
           </span>
         </div>
-      </span>
+      </div>
     </header>
    )
 };

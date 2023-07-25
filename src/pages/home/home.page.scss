@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: calc(var(--vh, 1vh) * 100); /* for mobile browsers */
     padding: 1rem;
 }
     
@@ -23,6 +23,7 @@
     align-items: center;
     margin-bottom: 2rem;
     width: 100%;
+    background-color: red;
 }
     
 .home-page-lower-content {

@@ -22,7 +22,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
-
       </main>
     </ViewportProvider>
   );
