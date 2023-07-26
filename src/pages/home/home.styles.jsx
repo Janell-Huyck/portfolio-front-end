@@ -11,14 +11,21 @@ export const HomePageContainer = styled.div`
     padding: 1rem;
     margin: 0 auto;
 
-    p {
-        font-size: 1.5rem;
-    }
-
     @media (min-width: 991.98px) {
         margin-left: 310px;
         width: calc(100% - 310px);
     }
+`;
+
+export const AboutMeText = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
 `;
 
 export const Headshot = styled.img`
