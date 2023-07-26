@@ -11,6 +11,10 @@ export const HomePageContainer = styled.div`
     padding: 1rem;
     margin: 0 auto;
 
+    p {
+        font-size: 1.5rem;
+    }
+
     @media (min-width: 991.98px) {
         margin-left: 310px;
         width: calc(100% - 310px);
