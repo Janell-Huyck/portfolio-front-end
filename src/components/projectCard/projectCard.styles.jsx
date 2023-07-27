@@ -66,16 +66,26 @@ export const Card = styled.div`
         width: 90%;
     }
 
-    
+
 `;
 
 export const CardImage = styled.div`
     width: 100%;
-    height: 0;
-    padding-bottom: 50%;
+    height: 200px;
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+`;
+
+export const VisuallyHiddenImage = styled.img`
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 `;
 
 export const CardTitle = styled.h2`

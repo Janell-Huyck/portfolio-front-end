@@ -5,14 +5,14 @@ import { ProjectsPageContainer, CardContainer, CenteredContent } from './project
 const Projects = () => {
 
     const projects = [
-        {
-            title: "Clothing-Ecommerce-Demo",
-            description: "A React project demonstrating a sample ecommerce application.",
-            liveLink: "https://janell-huyck-clothing-ecommerce-demo.netlify.app/",
-            imageURL: "/images/projects/clothing-ecommerce.png",
-            imageAlt: "Clothing Ecommerce Demo",
-            gitHubLink: "https://github.com/Janell-Huyck/clothing-ecommerce"
-        },
+        // {
+        //     title: "Clothing-Ecommerce-Demo",
+        //     description: "A React project demonstrating a sample ecommerce application.",
+        //     liveLink: "https://janell-huyck-clothing-ecommerce-demo.netlify.app/",
+        //     imageURL: "/images/projects/clothing-ecommerce.png",
+        //     imageAlt: "Clothing Ecommerce Demo",
+        //     gitHubLink: "https://github.com/Janell-Huyck/clothing-ecommerce"
+        // },
         {
             title: "2048-Game",
             description: "A React project demonstrating a clone of the game 2048.",
