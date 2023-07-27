@@ -9,6 +9,7 @@ export const HomePageContainer = styled.div`
     min-height: calc(var(--vh, 1vh) * 80);
     width: 100%;
     padding: 1rem;
+    padding-top: 3rem;
     margin: 0 auto;
 
     @media (min-width: 991.98px) {
