@@ -1,18 +1,18 @@
 import React from "react";
 import ProjectCard from "../../components/projectCard/projectCard.component";
-import './projects.styles.scss'
+import { ProjectsPageContainer, CardContainer, CenteredContent } from './projects.styles.jsx'
 
 const Projects = () => {
 
     const projects = [
-        // {
-        //     title: "Clothing-Ecommerce-Demo",
-        //     description: "A React project demonstrating a sample ecommerce application.",
-        //     liveLink: "https://janell-huyck-clothing-ecommerce-demo.netlify.app/",
-        //     imageURL: "/images/projects/clothing-ecommerce.png",
-        //     imageAlt: "Clothing Ecommerce Demo",
-        //     gitHubLink: "https://github.com/Janell-Huyck/clothing-ecommerce"
-        // },
+        {
+            title: "Clothing-Ecommerce-Demo",
+            description: "A React project demonstrating a sample ecommerce application.",
+            liveLink: "https://janell-huyck-clothing-ecommerce-demo.netlify.app/",
+            imageURL: "/images/projects/clothing-ecommerce.png",
+            imageAlt: "Clothing Ecommerce Demo",
+            gitHubLink: "https://github.com/Janell-Huyck/clothing-ecommerce"
+        },
         {
             title: "2048-Game",
             description: "A React project demonstrating a clone of the game 2048.",
@@ -33,20 +33,16 @@ const Projects = () => {
 
 
     return (
-        <div className="projects-page-container">
-            <h1>Projects</h1>
-            <div className="projects-list container-fluid content-row">
-                <div className="row">
-                    <div className="d-flex flex-wrap">
-                        {projects.map((project, index) => (
-                            <div className="col-sm-6 col-lg-4 h-500 m-2" key={index}>
-                                <ProjectCard project={project} />
-                            </div>
-                        ))}
-                    </div>  
-                </div>
-            </div>
-        </div>
+        <ProjectsPageContainer>
+            <CenteredContent>
+                <h1>Projects</h1>
+                <CardContainer>
+                    {projects.map((project, index) => (         
+                        <ProjectCard key={index} project={project} />
+                    ))}   
+                </CardContainer>
+            </CenteredContent>
+        </ProjectsPageContainer>
     );
 }
 

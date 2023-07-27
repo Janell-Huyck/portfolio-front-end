@@ -1,21 +1,21 @@
 import React from "react";
-import Button from "../button/button.component";
-import './projectCard.styles.scss';
+// import Button from "../button/button.component";
+import { Card, CardImage, CardTitle, CardText, CardButton, CardButtonContainer } from './projectCard.styles.jsx';
 
 const ProjectCard = ({ project }) => {
     const { title, description, liveLink, gitHubLink, imageURL, imageAlt } = project;
     return (
-        <div className="project-card card text-center h-100 d-flex flex-column">
-            <div className="project-title">{title}</div>
-            <img className="card-img-top " src={imageURL} alt={imageAlt} />
-            <div className="card-footer d-flex">
-                    <p className="project-description">{description}</p>
-                    <div className="see-links">
-                        <a href={liveLink} target="_blank" rel="noopener noreferrer"><Button className="project-button">Live</Button></a>
-                        <a href={gitHubLink} target="_blank" rel="noopener noreferrer"><Button className="project-button">Code</Button></a>
-                    </div>
-            </div>
-        </div>
+        <Card>
+            <CardTitle>{title}</CardTitle>
+            <CardImage as="img" style={{backgroundImage: `url(${imageURL})`}} alt={imageAlt} />
+            {/* <img className="card-img-top " src={imageURL} alt={imageAlt} /> */}
+            <CardText>{description}</CardText>
+            <CardButtonContainer>
+                <CardButton as="a" href={liveLink} target="_blank" rel="noopener noreferrer">Live</CardButton>
+                <CardButton as="a" href={gitHubLink} target="_blank" rel="noopener noreferrer">Code</CardButton>
+            </CardButtonContainer>
+            
+        </Card>
     );
 };
 
